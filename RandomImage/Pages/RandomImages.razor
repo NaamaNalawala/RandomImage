@@ -1,0 +1,24 @@
+﻿@page "/"
+@inject HttpClient httpclient 
+<h3 class="text-center">Hey, Welcome to this Blazor App</h3>
+<div class="text-center">
+    <img src="https://lh3.googleusercontent.com/proxy/mInk3UExVafz9zL8F7maZwq9N9jhh53EtKGzKh9O1EVzXGwaLimO8h1jDAMmMaNjMaZGyFJiiX5scVkL0IsKT9Ve8-Ka8pI" />
+</div>
+@code {
+    private readonly List<string> imageTopics = new List<string> { "dog", "cat", "lion", "tiger" };
+
+    //protected async override Task OnInitializedAsync()
+    //{
+    //    await GetHtmlCode();
+
+    //}
+
+    //private async Task<System.IO.Stream> GetHtmlCode()
+    //{
+    //    var random = new Random();
+    //    int topic = random.Next(0, imageTopics.Count - 1);
+    //    string url = $"https://www.google.com/search?q=animated {imageTopics[topic]} gif&tbm=isch";
+    //    var response= await httpclient.GetStreamAsync(url);
+    //    return response;
+    //}
+}
